@@ -71,7 +71,7 @@ public class GameController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<?> deletar(@PathVariable Integer id) {
+    public ResponseEntity<?> delete(@PathVariable Integer id) {
         gameService.delete(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
